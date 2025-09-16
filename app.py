@@ -43,9 +43,3 @@ if uploaded_file is not None:
         fig, ax = plt.subplots()
         sns.lineplot(x=df[x_axis], y=df[y_axis], ax=ax)
         st.pyplot(fig)
-
-        # Plot 3 - Heatmap (Correlation)
-        st.write("### Correlation Heatmap")
-        fig, ax = plt.subplots()
-        sns.heatmap(df.corr(), annot=True, cmap="coolwarm", ax=ax)
-        st.pyplot(fig)
